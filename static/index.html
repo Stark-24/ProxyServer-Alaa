@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Starkloud</title>
+</head>
+
+<body>
+  <div id="NavBar"></div>
+  <div id="HeroPlayer"></div>
+  <div style="display:flex; flex-direction:row; justify-content:center; background-color:white;">
+    <div id="commentsSection"></div>
+    <div id="sideBar"></div>
+  </div>
+  <div id="FooterPlayer"></div>
+  <script src="http://localhost:9001/app.js"></script>
+  <script src="http://localhost:9002/app.js"></script>
+  <script src="http://localhost:9003/bundle.js"></script>
+  <script src="http://localhost:9004/app.js"></script>
+</body>
+<script>
+  ReactDOM.render(
+    React.createElement(NavBar),
+    document.getElementById('NavBar')
+  );
+  ReactDOM.render(
+    React.createElement(HeroPlayer),
+    document.getElementById('HeroPlayer')
+  );
+  ReactDOM.render(
+    React.createElement(Comments),
+    document.getElementById('commentsSection')
+  );
+  ReactDOM.render(
+    React.createElement(SideBar),
+    document.getElementById('sideBar')
+  );
+  ReactDOM.render(
+    React.createElement(FooterPlayer),
+    document.getElementById('FooterPlayer')
+  );
+</script>
+</body>
+
+</html>
